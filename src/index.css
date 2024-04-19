@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.gradient_btn{
+  background:linear-gradient(to Right,#046BEE,#00367B) !important;
+  padding:.8rem 4rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #046BEE; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #046BEE; 
+}
+.bg_img01{
+  background-image: url("./assets/images/logo-03.png");
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-size: cover;
+  
+}
+.bg_img02{
+  background-image: url("./assets/images/logo-02.png");
+  background-repeat: no-repeat;
+  background-position:center center;
+  /* background-size: cover; */
+  object-fit: cover;
+  
+}
+.step0-bg{
+  background-image: url("./assets/images/step0.png");
+  background-repeat: no-repeat;
+  background-position:center center;
+  /* background-size: cover; */
+  object-fit: cover;
+  
+}
+/* .stepOne_bg{
+  background-image: url("./assets/images/step0.png");
+  background-repeat: no-repeat;
+  background-position:center center;
+  object-fit: cover;
+} */
