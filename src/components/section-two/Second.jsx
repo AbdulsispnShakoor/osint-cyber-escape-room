@@ -1,8 +1,8 @@
-import React from 'react'
+// import React from 'react'
 import s1 from '../../assets/images/search-01.png'
 import s2 from '../../assets/images/search-02.png'
 import s3 from '../../assets/images/search-03.png'
-import video1 from '../../assets/videos/intro.mp4'
+// import video1 from '../../assets/videos/intro.mp4'
 import LoginToStart from '../loginStart/LoginToStart'
 const Second = () => {
     return (

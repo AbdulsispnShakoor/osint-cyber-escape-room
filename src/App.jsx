@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/header/Navbar'
 import Home from './pages/Home'
-import Step0 from './pages/Step0/Step0'
+// import Step0 from './pages/Step0/Step0'
 import ProtectedRoute from '../utils/ProtectedRoute'
-import StepOne from './components/steps/StepOne'
+// import StepOne from './components/steps/StepOne'
 import StepTwo from './components/steps/StepTwo'
 import StepThree from './components/steps/StepThree'
 import Hero from './components/hero-section/Hero'
 import Section05 from './components/section-five/Section05'
-import SectionFour from './components/section-four/SectionFour'
+// import SectionFour from './components/section-four/SectionFour'
 import ContactForm from './components/contact-section/ContactForm'
 import Second from './components/section-two/Second'
 import Section06 from './components/section-06/Section06'
@@ -31,8 +31,11 @@ import { Toaster } from 'react-hot-toast'
 import { TimerContext } from './context/TimerContext';
 import Timer from './common/Timer'
 import Password from './components/password/Password';
+import Locker from './components/LockerComp/Locker'
+import LockerOne from './components/LockerComp/LockerOne'
+import ShipInfo from './components/steps/ShipInfo'
 
-import passwordcred from "/public/password.json";
+// import passwordcred from "/public/password.json";
 
 const App = () => {
   const [timer, setTimer] = useState(0);
@@ -91,7 +94,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Hero />} />
           <Route path='/timerExtra' element={<Timer />} />
-          <Route path='/about' element={<SectionFour />} />
+          {/* <Route path='/about' element={<SectionFour />} /> */}
           <Route path='/services' element={<Section03 />} />
           <Route path='/cyberEscapeRooms' element={<Section05 />} />
           <Route path='/contact' element={<ContactForm />} />
@@ -101,12 +104,19 @@ const App = () => {
           <Route path='/home' element={<Home />} />
           <Route path='/step' element={
             <ProtectedRoute>
-              <Step0 handleStart={handleStart}/>
+              {/* <Step0 handleStart={handleStart}/> */}
+              <Locker handleStart={handleStart}/>
             </ProtectedRoute>
           } />
           <Route path='/stepone' element={
             <ProtectedRoute>
-              <StepOne />
+              {/* <StepOne /> */}
+              <LockerOne />
+            </ProtectedRoute>
+          } />
+          <Route path='/ship-info-step' element={
+            <ProtectedRoute>
+              <ShipInfo />
             </ProtectedRoute>
           } />
           <Route path='/steptwo' element={

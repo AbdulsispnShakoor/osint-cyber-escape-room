@@ -10,7 +10,7 @@ const StepThree = () => {
 
 
   const firstFormData = useForm();
-  const { register, handleSubmit, control,formState: { errors } } = firstFormData;
+  const { register, handleSubmit, formState: { errors } } = firstFormData;
 
 
   const navigate = useNavigate()
@@ -83,7 +83,7 @@ const StepThree = () => {
 
   
               let a = 0 ;
-              let objLength = Object.keys(data).length;
+              // let objLength = Object.keys(data).length;
 
               questionsFirstForm.forEach(question => {
                  

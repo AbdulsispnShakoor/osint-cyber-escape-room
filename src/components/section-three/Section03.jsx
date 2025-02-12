@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import mobileImg from '../../assets/images/mobile_img1.png'
 import { Link } from 'react-router-dom'
 
@@ -26,8 +26,9 @@ const Section03 = () => {
                             3 Day Course
                         </p>
                         <p className='text-[#38B6FF] text-2xl mt-2'> 03 / Hosted 3-5 Day course.</p>
-                        <p className="mt-4 ">Let the Gentium Cyber and Wolf mind team take care of your accommodation and catering for a 3 day OSINT course or 5 Day advanced course which includes Operation Shadow Trace. Currently Hosting facilities in: UK, Germany, Italy and the Netherlands
-                            UK, Germany, Italy and Netherlands.</p>
+                        <p className="mt-4 ">Let the GentiumUK team take care of your accommodation and catering for a 3 day OSINT course or 5 Day advanced course which includes Operation Shadow Trace. Currently Hosting facilities in: UK, Germany, Italy and the Netherlands.</p>
+                        {/* <p className="mt-4 ">Let the Gentium Cyber and Wolf mind team take care of your accommodation and catering for a 3 day OSINT course or 5 Day advanced course which includes Operation Shadow Trace. Currently Hosting facilities in: UK, Germany, Italy and the Netherlands
+                            UK, Germany, Italy and Netherlands.</p> */}
                         <p className='text-[#38B6FF] text-2xl mt-4'> From: £599pp €695pp.</p>
                     </div>
                     <div className='flex items-center justify-center flex-col'>

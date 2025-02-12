@@ -1,6 +1,6 @@
-import React from 'react'
-import gentium_logo from '../../assets/images/gentium_logo_black cyber.png'
-import wolfmind_logo from '../../assets/images/logo-text-wolfmind.png'
+// import React from 'react'
+// import gentium_logo from '../../assets/images/logo-02.png'
+// import wolfmind_logo from '../../assets/images/logo-03.png'
 import { useContext } from 'react'
 import { TimerContext } from '../../context/TimerContext'
 
@@ -15,7 +15,7 @@ const {formatTime, timer} = useContext(TimerContext);
         </div>
        </div>
        <div className='xl:px-48 flex item-center gap-4 xl:items-end justify-between flex-col xl:flex-row pt-32 '>
-             <img className='px-24 md:w-1/2 mx-auto' src={wolfmind_logo} alt="wolfmind" />
+             {/* <img className='px-24 md:w-1/2 mx-auto' src={wolfmind_logo} alt="wolfmind" /> */}
               <div className='text-2xl border border-white text-center w-1/2 lg:p-6 px-4 mx-auto'>
        
                 {
@@ -23,7 +23,7 @@ const {formatTime, timer} = useContext(TimerContext);
                 }
         
               </div>
-             <img className='px-24 lg:w-1/2 mx-auto' src={gentium_logo} alt="gentium" />
+             {/* <img className='px-24 lg:w-1/2 mx-auto' src={gentium_logo} alt="gentium" /> */}
        </div>
     </div>
   )

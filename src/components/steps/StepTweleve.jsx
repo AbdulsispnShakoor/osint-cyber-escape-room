@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 import HeadingTwo from '../../common/HeadingTwo'
 import PrevButtonNavigate from '../../common/PrevButtonNavigate'
 import Timer from '../../common/Timer'
@@ -11,7 +11,7 @@ const StepTwelev = () => {
     const navigate  = useNavigate()
 
     const firstFormData = useForm();
-    const { register, handleSubmit, control,formState: { errors } } = firstFormData;
+    const { register, handleSubmit, formState: { errors } } = firstFormData;
 
     let questionsFifthForm = [
         {
@@ -69,7 +69,7 @@ const StepTwelev = () => {
               handleSubmit((data) => {
 
                 let a = 0 ;
-                let objLength = Object.keys(data).length;
+                // let objLength = Object.keys(data).length;
 
                 questionsFifthForm.forEach(question => {
 

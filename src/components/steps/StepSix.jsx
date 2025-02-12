@@ -10,7 +10,7 @@ const StepSix = () => {
 
 
   const firstFormData = useForm();
-  const { register, handleSubmit, control,formState: { errors } } = firstFormData;
+  const { register, handleSubmit, formState: { errors } } = firstFormData;
   const navigate = useNavigate();
 
     let questionsSecondForm = [

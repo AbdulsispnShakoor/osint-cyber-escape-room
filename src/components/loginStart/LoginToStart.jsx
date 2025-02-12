@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import startBtn from '../../assets/images/startBtn.png';
 import { useNavigate } from 'react-router-dom';
-import password from "../../../public/password.json";
-// console.log(password)
+// import password from "../../../public/password.json";
+
 let credential = '';
 // const credential = JSON.parse(localStorage.getItem("json-data"));
 // console.log(credential)
@@ -32,7 +32,7 @@ useEffect(()=>{
         // console.log(loginData);
         localStorage.setItem("login", JSON.stringify(loginData));
         const storeLogin = JSON.parse(localStorage.getItem("login"));
-        // console.log(storeLogin);
+        console.log(storeLogin);
 
         const {username, password} = credential;
         const {username:name, password:pass} = loginData;

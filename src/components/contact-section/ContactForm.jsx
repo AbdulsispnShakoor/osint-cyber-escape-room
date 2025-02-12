@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 const formValues = {
     name:"",
@@ -34,7 +34,7 @@ const ContactForm = () => {
                                 <p>Ready for the OSINT Escape Room adventure? Click to sign up or ask questions. Let's start your journey in mastering open-source intelligence. Connect with us now!</p>
                                <div className="flex space-x-8">
                                 <div className="line pt-8">
-                                <svg width="24" height="280" viewBox="0 0 24 322" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="24" height="220" viewBox="0 0 24 322" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <line x1="13" y1="12" x2="13" y2="310" stroke="#38B6FF" strokeWidth="2"/>
                                     <circle cx="12" cy="12" r="12" fill="#38B6FF"/>
                                     <circle cx="12" cy="158" r="12" fill="#38B6FF"/>
@@ -44,18 +44,19 @@ const ContactForm = () => {
                                 <div className="contacts">
                                     <div className="phone flex flex-col space-y-3 mt-6">
                                         <h3 className='text-3xl font-semibold text-[#38B6FF]'>Phone Number</h3>
-                                        <p> +31 (0) 630714889</p>
-                                        <p> +44(0)7818725408</p>
+                                        {/* <p> +31 (0) 630714889</p> */}
+                                        {/* <p> +44(0)7818725408</p> */}
+                                        <p> +44(0)20 3239 1117</p>
                                     </div>
                                     <div className="phone flex flex-col space-y-3 mt-6">
                                         <h3 className='text-3xl font-semibold text-[#38B6FF]'>Email Address</h3>
-                                        <p> info@wolfmind.nl </p>
-                                        <p>info@gentiumcyber.com</p>
+                                        {/* <p> info@wolfmind.nl </p> */}
+                                        <p>info@gentiumuk.com</p>
                                     </div>
                                     <div className="phone flex flex-col space-y-3 mt-6">
                                         <h3 className='text-3xl font-semibold text-[#38B6FF]'>Official Website</h3>
-                                        <p> www.wolfmind.nl </p>
-                                        <p> www.gentiumcyber.com</p>
+                                        {/* <p> www.wolfmind.nl </p> */}
+                                        <a href='https://www.gentiumuk.com' target='_blank' rel="noreferrer">https://www.gentiumuk.com</a>
                                     </div>
                                 </div>
                                </div>

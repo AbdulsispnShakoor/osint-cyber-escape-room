@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 import HeadingTwo from '../../common/HeadingTwo'
 import PrevButtonNavigate from '../../common/PrevButtonNavigate'
 import Timer from '../../common/Timer'
@@ -11,7 +11,7 @@ const StepTen = () => {
     const navigate = useNavigate()
 
     const firstFormData = useForm();
-    const { register, handleSubmit, control,formState: { errors } } = firstFormData;
+    const { register, handleSubmit, formState: { errors } } = firstFormData;
 
     let questionsFourthForm = [
         {
@@ -79,7 +79,7 @@ const StepTen = () => {
               handleSubmit((data) => {
 
                 let a = 0 ;
-                let objLength = Object.keys(data).length;
+                // let objLength = Object.keys(data).length;
                 
                 questionsFourthForm.forEach(question => {
 
@@ -123,22 +123,6 @@ const StepTen = () => {
                   localStorage.setItem("fourthFormData", JSON.stringify(data));
                   navigate("/stepeleven") 
                 }
-
-                //   if (lower !== " " && (lower === question.ans)) {                    
-                //     a++
-                //     toast.success(`${lower} : matched ✅`,{
-                //       duration: 2000,
-                //     })
-                //   }else{
-                //     toast.error(`${lower} : wrong answer ❌`,{
-                //       duration: 2000,
-                //     })
-                //   }
-                // });
-                // if(a === objLength){
-                //     localStorage.setItem("fourthFormData", JSON.stringify(data));
-                //     navigate("/stepeleven")
-                // };
                 
               })();
             }}> <NextButton /> </div>

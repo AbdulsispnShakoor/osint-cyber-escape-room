@@ -1,15 +1,12 @@
 // import React from 'react'
 import HeadingTwo from '../../common/HeadingTwo'
-import shipImg from '../../assets/images/Shipnew.png';
+import video2 from '../../assets/videos/OSINT CER task 1.mp4';
 import PrevButtonNavigate from '../../common/PrevButtonNavigate';
 import NextButtonNavigate from '../../common/NextButtonNavigate';
 import Timer from '../../common/Timer';
-// import { TimerContext } from '../../context/TimerContext';
-// import { useContext } from 'react';
 
 
-const StepTwo = () => {
-  // const {handleReset} = useContext(TimerContext)
+const ShipInfo = () => {
     return (
     <div className='text-white px-4 sm:px-36 lg:px-64 py-16 flex justify-center flex-col gap-8'>
        <div className="top flex items-center justify-between space-y-4 md:justify-between flex-wrap md:flex-nowrap">
@@ -21,12 +18,14 @@ const StepTwo = () => {
                 <Timer />
             </div>
        </div>
-       <img src={shipImg} alt="ship image" className='lg:w-2/4 self-center' />
+       <div className="video ">
+             <video src={video2} autoPlay controls></video>
+        </div>
        
     
-        <NextButtonNavigate navigatePropNext={'/stepthree'}/>
+        <NextButtonNavigate navigatePropNext={'/steptwo'}/>
     </div>
   )
 }
 
-export default StepTwo
+export default ShipInfo

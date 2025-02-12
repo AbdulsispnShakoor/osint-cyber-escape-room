@@ -10,13 +10,13 @@ const StepFourteen = () => {
   const navigate = useNavigate()
 
     const firstFormData = useForm();
-    const { register, handleSubmit, control,formState: { errors } } = firstFormData;
+    const { register, handleSubmit, formState: { errors } } = firstFormData;
 
     let questionsSixForm = [
         {
             id:1,
             quiz:"Street name?",
-            ans:"mahmutbey, 2664.sokak no:12/a, 34218 bağcılar/i̇stanbul, türkiye"
+            ans:"open filed"
         },
         {
             id:2,
@@ -73,7 +73,7 @@ const StepFourteen = () => {
               handleSubmit((data) => {
                 
                 let a = 0 ;
-                let objLength = Object.keys(data).length;
+                // let objLength = Object.keys(data).length;
 
                 questionsSixForm.forEach(question => {
 
@@ -113,22 +113,6 @@ const StepFourteen = () => {
                   navigate("/stepfifteen") 
                 }
 
-                //   if (lower !== " " && (lower === question.ans)) {
-      
-                //     a++
-                //     toast.success(`${lower} : matched ✅`,{
-                //       duration: 2000,
-                //     })
-                //   }else{
-                //     toast.error(`${lower} : wrong answer ❌`,{
-                //       duration: 2000,
-                //     })
-                //   }
-                // });
-                // if(a === objLength){
-                //     localStorage.setItem("sixthFormData", JSON.stringify(data));
-                //     navigate("/stepfifteen")
-                // }
               })();
             }}> <NextButton /> </div>
         </div>

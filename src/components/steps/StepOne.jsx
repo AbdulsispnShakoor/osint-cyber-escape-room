@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import  { useContext } from 'react'
 import HeadingTwo from '../../common/HeadingTwo'
 import video2 from '../../assets/videos/OSINT CER task 1.mp4';
 import PrevButtonNavigate from '../../common/PrevButtonNavigate';

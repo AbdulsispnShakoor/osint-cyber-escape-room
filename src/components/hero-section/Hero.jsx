@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import hero_img from '../../assets/images/header-img.png'
 import { Link } from 'react-router-dom'
 const Hero = () => {

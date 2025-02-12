@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 import HeadingTwo from '../../common/HeadingTwo'
 import PrevButtonNavigate from '../../common/PrevButtonNavigate'
 import Timer from '../../common/Timer'
@@ -11,7 +11,7 @@ const StepEight = () => {
 
     const navigate = useNavigate()
     const firstFormData = useForm();
-    const { register, handleSubmit, control,formState: { errors } } = firstFormData;
+    const { register, handleSubmit, formState: { errors } } = firstFormData;
   
     let questionsThirdForm = [
         {
@@ -26,7 +26,7 @@ const StepEight = () => {
         },
         {
             id:3,
-            quiz:"Are they still active?",
+            quiz:"Are they still active? (yes/no)",
             ans:"no"
         },
         {
@@ -36,8 +36,13 @@ const StepEight = () => {
         },
         {
             id:5,
-            quiz:"DOB and Address?(MM/YY only)",
-            ans:"08/1950 and 6 cottenham road, histon, cambridge, cambridgeshire, cb4 4es"
+            quiz:"DOB of the accountant? (MM/YYYY)",
+            ans:"08/1950"
+        },
+        {
+            id:6,
+            quiz:"Address of the accountant?",
+            ans:"open filed"
         }
     ];
  
@@ -60,7 +65,7 @@ const StepEight = () => {
             return (
               <div key={question.id} className="input_group flex justify-center flex-col xl:flex-row lg:justify-between items-center space-x-4 flex-wrap lg:flex-nowrap space-y-4 mb-4">
                 <label htmlFor={quiz} className='text-xl md:text-xl font-semibold'>{quiz}</label>
-                <div className="flex flex-col space-y-1 w-2/4">
+                <div className="flex flex-col space-y-1 w-[45%]">
 
                 <input
                   type="text"
@@ -84,7 +89,7 @@ const StepEight = () => {
               handleSubmit((data) => {
 
                 let a = 0 ;
-                let objLength = Object.keys(data).length;
+                // let objLength = Object.keys(data).length;
 
                 questionsThirdForm.forEach(question => {
 
@@ -114,22 +119,33 @@ const StepEight = () => {
                         toast.success(`${lower} : matched ✅`,{
                           duration: 2000,
                         })
+                    }else if(lower === "08/1950"){
+                      a++
+                      toast.success(`${lower} : matched ✅`,{
+                        duration: 2000,
+                      })
                     }
 
                     let q1Check = lower !== "beaumont stainless steels ltd" && question.id === 1;
                     let q2Check = lower !== "01155165" && question.id === 2;
                     let q3Check = lower !== "no" && question.id === 3;
                     let q4Check = lower !== "colin neil bates" && question.id === 4;
+                    let q5Check = lower !== "08/1950" && question.id === 5;
+          
+                    // let q6Check = lower !== "6 cottenham road, histon, cambridge, cambridgeshire, cb4 4es" && question.id === 6;
 
-                      if(q1Check || q2Check  || q3Check || q4Check){
+                    
+                    if(q1Check || q2Check  || q3Check || q4Check || q5Check){
+        
                         toast.error(`${question.quiz} : wrong answer ❌`,{
                           duration: 2000,
                         })
                     }
                   }
                 });
+         
 
-                  if(a === 4){
+                if(a === 5){
                   localStorage.setItem("thirdFormData", JSON.stringify(data));
                   navigate("/stepnine") 
                 }
