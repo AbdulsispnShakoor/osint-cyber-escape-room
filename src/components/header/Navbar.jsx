@@ -40,28 +40,22 @@ const Navbar = () => {
             </div>
             <div className="hidden lg:flex lg:items-center flex-wrap lg:space-x-3">
               <Link to="/" className="text-base font-medium ">
-                {" "}
-                Home{" "}
+                Home
               </Link>
               {/* <Link to="/about"  className="text-base font-medium "> About </Link> */}
               <Link to="/services" className="text-base font-medium">
-                {" "}
-                Services{" "}
+                Services
               </Link>
               <Link to="/cyberEscapeRooms" className="text-base font-medium">
-                {" "}
                 Cyber Escape Rooms
               </Link>
               <Link to="/playOpShadowTrace" className="text-base font-medium">
-                {" "}
                 Play Op Shadow Trace
               </Link>
               <Link to="/whyOsint?" className="text-base font-medium">
-                {" "}
                 Why Osint?
               </Link>
               <Link to="/contact" className="text-base font-medium">
-                {" "}
                 Contact
               </Link>
             </div>
@@ -118,7 +112,6 @@ const Navbar = () => {
             </button> */}
 
               <Link to="/contact">
-                {" "}
                 <button className="gradient_btn">Play Now</button>
               </Link>
             </div>
@@ -131,28 +124,22 @@ const Navbar = () => {
             <div className="mt-6">
               <div className="flex flex-col space-y-4">
                 <Link to="/" className="text-base font-medium ">
-                  {" "}
-                  Home{" "}
+                  Home
                 </Link>
                 {/* <Link to="/about"  className="text-base font-medium "> About </Link> */}
                 <Link to="/services" className="text-base font-medium">
-                  {" "}
-                  Services{" "}
+                  Services
                 </Link>
                 <Link to="/cyberEscapeRooms" className="text-base font-medium">
-                  {" "}
                   Cyber Escape Rooms
                 </Link>
                 <Link to="/playOpShadowTrace" className="text-base font-medium">
-                  {" "}
                   Play Op Shadow Trace
                 </Link>
                 <Link to="/whyOsint?" className="text-base font-medium">
-                  {" "}
                   Why Osint?
                 </Link>
                 <Link to="/contact" className="text-base font-medium">
-                  {" "}
                   Contact
                 </Link>
               </div>
